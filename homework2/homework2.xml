@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id="test" class="homework2.Interfaceimpl"></bean>
+<bean id="test2" class="homework2.Serviceinterfaceimpl">
+<constructor-arg index="0" ref="test"></constructor-arg>
+</bean>
+
+</beans>
